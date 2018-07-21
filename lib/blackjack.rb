@@ -57,6 +57,7 @@ def runner
   points = initial_round
   hit?(points)
   until points > 21
+    display_card_total
     points = points + hit?(points)
   end
   end_game(points)
