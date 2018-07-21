@@ -57,7 +57,7 @@ def runner
   points = initial_round
   hit?(points)
   until points > 21
-    points += hit(points)
+    points += hit?(points)
   end
   end_game
 end
