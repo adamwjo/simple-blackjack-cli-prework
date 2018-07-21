@@ -60,7 +60,6 @@ end
 def runner
   welcome
   points = initial_round
-  hit?(points)
   until points > 21
     points = points + hit?(points)
   end
