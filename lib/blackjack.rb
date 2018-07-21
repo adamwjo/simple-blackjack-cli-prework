@@ -58,7 +58,6 @@ def runner
   hit?(points)
   until points > 21
     points = points + hit?(points)
-    points
   end
   end_game(points)
 end
