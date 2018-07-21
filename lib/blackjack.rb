@@ -35,13 +35,17 @@ def hit?(card_points)
   prompt_user
   choice = get_user_input
 
+  until choice == "s" || choice == "h"
+    invalid_command
+    prompt_user
+    choice = get_user_input
+  end
+
   if choice == "s"
     card_points
   elsif choice == "h"
     deal = deal_card
     card_points = card_points + deal
-  else
-    invalid_command
   end
 end
 
