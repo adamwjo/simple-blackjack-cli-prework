@@ -61,7 +61,7 @@ def runner
   welcome
   points = initial_round
   until points > 21
-    points = points + hit?(points)
+    points = hit?(points)
   end
   display_card_total(points)
   end_game(points)
